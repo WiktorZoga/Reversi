@@ -1,0 +1,47 @@
+\doxysection{Board Class Reference}
+\hypertarget{class_board}{}\label{class_board}\index{Board@{Board}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_board_a0e63bff161b985407647a49f11548129}\label{class_board_a0e63bff161b985407647a49f11548129} 
+{\bfseries Board} (int \+\_\+\+HEIGHT=BOARD\+\_\+\+HEIGHT, int \+\_\+\+WIDTH=BOARD\+\_\+\+WIDTH)
+\item 
+\Hypertarget{class_board_a888725ae3b1177a60a8f77299c1c939a}\label{class_board_a888725ae3b1177a60a8f77299c1c939a} 
+int {\bfseries get\+Height} () const
+\item 
+\Hypertarget{class_board_a31bdad2985e3b4857a383dd2da8e8e27}\label{class_board_a31bdad2985e3b4857a383dd2da8e8e27} 
+int {\bfseries get\+Width} () const
+\item 
+\Hypertarget{class_board_a5f148daa03da25d40dff3fc613568d6f}\label{class_board_a5f148daa03da25d40dff3fc613568d6f} 
+void {\bfseries clear\+Board} ()
+\item 
+\Hypertarget{class_board_a3e2ec9b61e96edf6213df7b4a4a13f38}\label{class_board_a3e2ec9b61e96edf6213df7b4a4a13f38} 
+const std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{class_block}{Block}} $>$ $>$ {\bfseries get\+Board} () const
+\item 
+\Hypertarget{class_board_a07bb388f4543596d6e7f59a85e64f964}\label{class_board_a07bb388f4543596d6e7f59a85e64f964} 
+Block\+Type {\bfseries get\+Block\+Type\+At} (\mbox{\hyperlink{class_board_position}{Board\+Position}} position) const
+\item 
+\Hypertarget{class_board_a1577d8f3d2098557374299734082d13d}\label{class_board_a1577d8f3d2098557374299734082d13d} 
+Block\+Type {\bfseries get\+Opp\+Block\+Type\+At} (\mbox{\hyperlink{class_board_position}{Board\+Position}} position) const
+\item 
+\Hypertarget{class_board_a3805e345734b0e6db439ac59d613f215}\label{class_board_a3805e345734b0e6db439ac59d613f215} 
+bool {\bfseries is\+Setable\+Position} (\mbox{\hyperlink{class_board_position}{Board\+Position}} position, \mbox{\hyperlink{class_block}{Block}} block)
+\item 
+\Hypertarget{class_board_aa700d01d99fd375fd5bfdf1149daa9bd}\label{class_board_aa700d01d99fd375fd5bfdf1149daa9bd} 
+bool {\bfseries attempt\+To\+Set\+Block} (\mbox{\hyperlink{class_board_position}{Board\+Position}} position, \mbox{\hyperlink{class_block}{Block}} block)
+\item 
+\Hypertarget{class_board_a0e4ecea3e5971db7bd13693f1027ce74}\label{class_board_a0e4ecea3e5971db7bd13693f1027ce74} 
+bool {\bfseries attempt\+To\+Make\+Move} (\mbox{\hyperlink{class_move}{Move}} move)
+\item 
+\Hypertarget{class_board_a8cb26fb75e93550deb2d4d9ceccdf611}\label{class_board_a8cb26fb75e93550deb2d4d9ceccdf611} 
+std\+::vector$<$ \mbox{\hyperlink{class_move}{Move}} $>$ {\bfseries get\+Moves} (Block\+Type side)
+\item 
+\Hypertarget{class_board_a321bc371a0d8454d41273e49ce1bcb13}\label{class_board_a321bc371a0d8454d41273e49ce1bcb13} 
+bool {\bfseries do\+Have\+Any\+Moves} (Block\+Type side)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/board.\+h\item 
+src/board.\+cpp\end{DoxyCompactItemize}

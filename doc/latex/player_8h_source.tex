@@ -1,0 +1,47 @@
+\doxysection{player.\+h}
+\hypertarget{player_8h_source}{}\label{player_8h_source}\index{src/player.h@{src/player.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PLAYER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PLAYER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}board.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}ui.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ \#include\ "{}ai.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{enum}\ PlayerType\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ HUMAN,}
+\DoxyCodeLine{00010\ \ \ \ \ BOT}
+\DoxyCodeLine{00011\ \};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{/*******************************************************************************************************************}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ Player\ is\ a\ class\ containing\ whole\ player\ structure\ and\ all\ the\ methodes\ player\ needs\ in\ playing\ out\ a\ move}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ (methods\ do\ what\ they\ are\ called)}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ ******************************************************************************************************************/}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_player}{Player}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ PlayerType\ playerType;}
+\DoxyCodeLine{00020\ \ \ \ \ BlockType\ playerSide;}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_board}{Board}}*\ board;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}(PlayerType\ \_playerType\ =\ HUMAN,\ BlockType\ \_playerSide\ =\ WHITE\_BLOCK);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_move}{Move}}\ getMove(\mbox{\hyperlink{class_ui}{Ui}}*\ ui);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ makeMove(\mbox{\hyperlink{class_move}{Move}}\ move);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ PlayerType\ getPlayerType()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ BlockType\ getPlayerSide()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ setPlayerType(PlayerType\ \_playerType);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ setPlayerSide(BlockType\ \_playerSide);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ setPlayerBoard(\mbox{\hyperlink{class_board}{Board}}*\ \_board);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_board}{Board}}\ getBoard()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

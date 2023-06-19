@@ -1,0 +1,28 @@
+\doxysection{move.\+h}
+\hypertarget{move_8h_source}{}\label{move_8h_source}\index{src/move.h@{src/move.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MOVE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MOVE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}board\_position.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}block.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{/*************************************************************************************************************}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ Move\ is\ a\ class\ containing\ position\ and\ type\ of\ block\ which\ is\ to\ be\ placed\ on\ board}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ (methods\ do\ what\ they\ are\ called)}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ ************************************************************************************************************/}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_move}{Move}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_board_position}{BoardPosition}}\ position;}
+\DoxyCodeLine{00014\ \ \ \ \ BlockType\ type;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_move}{Move}}(\mbox{\hyperlink{class_board_position}{BoardPosition}}\ \_position\ =\ \mbox{\hyperlink{class_board_position}{BoardPosition}}(),\ BlockType\ \_type\ =\ EMPTY\_BLOCK);}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_board_position}{BoardPosition}}\ getMovePosition()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ BlockType\ getMoveType()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

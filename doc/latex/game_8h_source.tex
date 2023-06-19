@@ -1,0 +1,47 @@
+\doxysection{game.\+h}
+\hypertarget{game_8h_source}{}\label{game_8h_source}\index{src/game.h@{src/game.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GAME\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GAME\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}player.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}board.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}ui.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{enum}\ GameMode\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ HUMAN\_VS\_HUMAN,}
+\DoxyCodeLine{00012\ \ \ \ \ HUMAN\_VS\_BOT,\ }
+\DoxyCodeLine{00013\ \ \ \ \ BOT\_VS\_HUMAN}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{/*************************************************************}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ Game\ is\ a\ class\ responsible\ for\ the\ course\ of\ the\ game\ }}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ (methods\ do\ what\ they\ are\ called)}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *************************************************************/}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game}{Game}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ GameMode\ gameMode;}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}\ player1,\ player2;}
+\DoxyCodeLine{00023\ \ \ \ \ BlockType\ activePlayer;}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_ui}{Ui}}*\ ui;}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_board}{Board}}\ board;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_game}{Game}}(\mbox{\hyperlink{class_ui}{Ui}}*\ \_ui,\ GameMode\ \_gameMode\ =\ HUMAN\_VS\_HUMAN);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}*\ getActivePlayer();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ BlockType\ getActivePlayerSide();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ gameTick();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ gameOver();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

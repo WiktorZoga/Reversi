@@ -1,0 +1,39 @@
+\doxysection{board\+\_\+position.\+h}
+\hypertarget{board__position_8h_source}{}\label{board__position_8h_source}\index{src/board\_position.h@{src/board\_position.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BOARD\_POSITION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BOARD\_POSITION\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <array>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{enum}\ MoveDirection\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ UP,\ }
+\DoxyCodeLine{00008\ \ \ \ \ UP\_RIGHT,}
+\DoxyCodeLine{00009\ \ \ \ \ RIGHT,\ }
+\DoxyCodeLine{00010\ \ \ \ \ DOWN\_RIGHT,}
+\DoxyCodeLine{00011\ \ \ \ \ DOWN,}
+\DoxyCodeLine{00012\ \ \ \ \ DOWN\_LEFT,}
+\DoxyCodeLine{00013\ \ \ \ \ LEFT,\ }
+\DoxyCodeLine{00014\ \ \ \ \ UP\_LEFT}
+\DoxyCodeLine{00015\ \};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{const}\ std::array<int,\ 8>\ MOVE\_ROW\ =\ \{-\/1,\ -\/1,\ 0,\ +1,\ +1,\ +1,\ 0,\ -\/1\};}
+\DoxyCodeLine{00018\ \textcolor{keyword}{const}\ std::array<int,\ 8>\ MOVE\_COL\ =\ \{0,\ +1,\ +1,\ +1,\ 0,\ -\/1,\ -\/1,\ -\/1\};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{/*************************************************************}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ BoardPosition\ is\ some\ position\ on\ board\ (row\ and\ column)}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ (methods\ do\ what\ they\ are\ called)}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *************************************************************/}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_board_position}{BoardPosition}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ row,\ col;}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_board_position}{BoardPosition}}(\textcolor{keywordtype}{int}\ \_row\ =\ -\/1,\ \textcolor{keywordtype}{int}\ \_col\ =\ -\/1);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ move(MoveDirection\ dierction);}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

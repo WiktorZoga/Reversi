@@ -1,0 +1,64 @@
+\doxysection{ui.\+h}
+\hypertarget{ui_8h_source}{}\label{ui_8h_source}\index{src/ui.h@{src/ui.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ UI\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ UI\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <ncurses.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}board.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{enum}\ TerminalColors\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ Clear,\ }
+\DoxyCodeLine{00009\ \ \ \ \ Black,\ }
+\DoxyCodeLine{00010\ \ \ \ \ Red,\ }
+\DoxyCodeLine{00011\ \ \ \ \ Green,\ }
+\DoxyCodeLine{00012\ \ \ \ \ Yellow,\ }
+\DoxyCodeLine{00013\ \ \ \ \ Blue,\ }
+\DoxyCodeLine{00014\ \ \ \ \ White}
+\DoxyCodeLine{00015\ \};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ NUMBER\_OF\_COLORS\ =\ 7;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ OFFSET\ =\ 2;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{/**************************************************************************************}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ Ui\ is\ a\ class\ responsible\ for\ the\ entire\ display\ of\ the\ game\ onto\ linux\ terminal}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ (methods\ do\ what\ they\ are\ called)}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ **************************************************************************************/}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui}{Ui}}\ \{}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ WINDOW\ *\ statusWindow;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ statusWindowHeight,\ statusWindowWidth;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ statusStarting\_y,\ statusStarting\_x;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ getStatus(\textcolor{keywordtype}{int}\ countBlack,\ \textcolor{keywordtype}{int}\ countWhite);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ initColors();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ WINDOW\ *\ mainWindow;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ mainWindowHeight,\ mainWindowWidth;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{int}\ starting\_y,\ starting\_x,\ last\_y,\ last\_x;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_ui}{Ui}}(\textcolor{keywordtype}{int}\ \_mainWindowHeight\ =\ BOARD\_HEIGHT\ +\ OFFSET,\ \textcolor{keywordtype}{int}\ \_mainWindowWidth\ =\ BOARD\_WIDTH\ +\ OFFSET,\ \textcolor{keywordtype}{int}\ start\_y\ =\ 0,\ \textcolor{keywordtype}{int}\ start\_x\ =\ 0);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ initUi();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ endUi(\mbox{\hyperlink{class_board}{Board}}*\ board);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ updateUi();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ draw(\mbox{\hyperlink{class_board}{Board}}*\ board,\ BlockType\ side);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
